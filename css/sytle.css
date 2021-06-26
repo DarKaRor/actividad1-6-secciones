@@ -1,0 +1,551 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --red-color: #dd1438;
+}
+
+body
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+b{
+    color:var(--red-color)
+}
+
+/* ------ REUSABLES ------ */
+
+.boton{
+    margin-top:50px;
+    font-size:150%;
+}
+
+.boton a{
+    background-color: rgb(30, 128, 128);
+    text-decoration:none;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    transition:background-color 0.5s;
+}
+
+.boton a:hover{
+    background-color: rgb(21, 90, 90);
+}
+
+/*------ HERO -------- */
+#hero
+{
+    background-size: cover;
+    background-position: bottom right;
+    background-attachment:initial;
+    height:60vh;
+    position:relative;
+}
+
+#hero.second{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/header2.jpg);
+}
+
+#hero.first{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/header.jpg);
+}
+
+#hero img
+{
+margin-left:10%;
+margin-top:20px;
+}
+
+
+#navegacion
+{
+    background-color:rgba(53, 52, 52, 0.7);
+    border-radius: 5px;
+    height:15%;
+    width:60%;
+    display:block;
+    position:absolute;
+    top:5%;
+    right:5%;    
+}
+
+#navegacion ul
+{
+    height:100%;
+    display:flex;
+    align-items: stretch;
+    align-self: center;
+}
+
+#navegacion li
+{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#navegacion li a
+{
+    margin: auto;
+    text-decoration: none;
+    font-size:150%;
+    color:whitesmoke;
+    padding-top: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+#navegacion li a:hover{
+    border-bottom: 2px solid var(--red-color);
+    
+}
+
+#navegacion li a.active{
+    color: whitesmoke;
+    background-color: var(--red-color);
+    padding: 10px 10px 10px 10px;
+    height:100%;
+    width:100%;
+    text-align:center;
+}
+
+.welcome
+{
+    color:white;
+    font-size:200%;
+    display:block;
+    margin-top:5%;
+    margin-left:10%;
+    font-weight:100;
+}
+
+/* -------- CONTENT ------- */
+
+h2{
+    font-size: 250%;
+    color:var(--red-color);
+}
+
+
+
+#contenido{
+    width:70%;
+    height:60vh;
+    margin-top:100px;
+    margin-left:15%;
+    margin-right:15%;
+    margin-bottom:100px;
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#contenido.first{
+    background-image: url(../img/section1.jpg);
+}
+
+#contenido.second {
+    display:flex;
+    justify-content: center;
+
+}
+
+#contenido.second img{
+    
+    height:100%;
+    width:60%;
+    display: block;
+    padding-right:50px;
+
+}
+
+#contenido .text
+{
+    width:50%;
+    height:100%;
+    padding-top:10%;
+    padding-bottom:20px;
+    line-height: 200%;
+    text-align:center;
+
+}
+
+#contenido p{
+    font-size:150%;
+    padding-top:50px;
+    width:100%;
+}
+
+/*-------- HISTORIA ----------*/
+
+.historia
+{
+    background-size: cover;
+    background-position:center center;
+    background-attachment:fixed;
+    position:relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(../img/wendys-exterior.jpg);
+    padding-bottom:10vh;
+}
+
+.historia .text{
+    width:100%;
+    padding-top:10%;
+    padding-left:25%;
+    padding-right:25%;
+    padding-bottom:20px;
+    line-height: 200%;
+    text-align:center;
+    word-wrap:break-word;
+    color:white;
+}
+
+.historia p{
+
+        font-size:150%;
+        padding-top:50px;
+        width:100%;
+
+}
+
+.historia h2{
+    color:rgb(30, 128, 128);
+}
+
+/*------------ MENU  ---------*/
+
+#menu{
+    margin-top:100px;
+    margin-bottom:100px;
+    text-align: center;
+}
+
+#menu .items{
+    margin-top:30px;
+    margin-left:10%;
+    margin-right:10%;
+    width:80%;
+}
+
+#menu .items ul{
+    text-decoration: none;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap: wrap;
+  
+}
+
+#menu .items ul li{
+
+    flex: 1 0 25%; 
+    
+}
+
+#menu .item{
+    margin-top:50px;
+    transition: all 0.5s;
+}
+
+#menu .item h3{
+    color:var(--red-color);
+    padding-bottom:20px;
+}
+
+#menu .item:hover{
+
+    transform:scale(120%);
+    box-shadow:0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    background-color:rgb(243, 243, 243);
+
+}
+
+/* --------- PRECIOS ------*/
+
+.subscripciones{
+    padding-top:100px;
+    padding-bottom:100px;
+    background-color:rgb(245, 245, 245);
+}
+
+.reward-img{
+    width:50%;
+    height:50%;
+}
+
+.precios{
+    
+   
+    margin-left:25%;
+    width:50%;
+
+    display:flex;
+    flex-direction: row;
+    text-align:center;
+    
+}
+
+.precio{
+    width:100%;
+    margin-left:50px;
+    margin-right:30px;
+    padding-top:30px;
+    padding-bottom:30px;
+    transform:scale(120%);
+    background-color:white;
+    box-shadow: 1px 1px 5px 1px black;
+
+}
+
+.precio h3{
+    color:var(--red-color);
+    font-size:250%;
+    margin-bottom:20px;  
+}
+
+.precio h4{
+    font-size:150%;
+    margin-bottom:40px;
+}
+
+.precio h4::after{
+    margin-top:10px;
+    display: block;
+    height:2px;
+    background-color:var(--red-color);
+    content:" ";
+}
+
+.precio ul{
+    list-style: none;
+}
+
+.precio ul li{
+    padding:20px;
+    margin-bottom:30px;
+    text-align:left;
+}
+
+/*--------- REDES ----------*/
+
+.redes{
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align:center;
+}
+
+.redes ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+.redes ul li{
+    padding:30px;
+    flex: 1 0 33%; 
+}
+
+.redes ul li:first-child a{
+    color:#3b5998;
+}
+
+.redes ul li:nth-child(2) a{
+    color:cornflowerblue;
+}
+
+.redes ul li:last-child a{
+    color:#3f729b;
+}
+
+.redes ul li a{
+    text-decoration:none;
+    padding:30px;
+}
+
+.redes ul li a i{
+    font-size:1000%;
+}
+.redes p{
+    margin-top:40px;
+    font-size:110%;
+    line-height: 30px;
+    word-spacing:5px;
+    width:60%;
+    margin-left:20%;
+}
+
+
+
+/* ------------ FOOTER ---------*/
+
+#pie{
+    background-color: rgb(44, 44, 44);
+    padding-top:50px;
+    padding-left:100px;
+    padding-right:100px;
+    padding-bottom:50px;
+    display:flex;
+    align-items: center;
+}
+
+.copyright{
+    width:90%;
+    color:whitesmoke;
+}
+
+.copyright img{
+
+    height:40px;
+
+}
+
+.social{
+    width:10%;
+}
+
+.social ul{
+
+    list-style: none;
+    display:flex;
+    align-items: stretch;
+    align-self: center;
+}
+
+.social ul li {
+
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+
+.social ul li a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    font-size:150%;
+}
+
+/* ------------ CONTACTO ---------- */
+
+.contacto{
+    background-color: rgb(240, 240, 240);
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.contacto-caja{
+    padding: 50px 50px 50px 50px;
+    margin-left:35%;
+    width:30%;
+    background-color:white;
+    border-radius:5px;
+
+}
+
+input[type=text], select, textarea, input[type="mail"] {
+    width: 100%; 
+    padding: 15px; 
+    border: 0px;
+    border-bottom: 1px solid rgb(219, 140, 140); 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+  }
+  
+
+  
+  input[type=submit] {
+    background-color: var(--red-color);
+    color: white;
+    border-radius: 3px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    display:block;
+    margin:auto;
+    transition:background-color 0.5s;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(143, 12, 12);
+    
+  }
+
+  /* -------- MEDIA QUERIES --------- */
+
+  @media (max-width:768px)
+  {
+
+    #hero{
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .welcome{
+        font-size:130%;
+        word-wrap: break-word;
+    }
+
+
+
+#hero img
+{
+    display:block;
+    width:150px;
+    height:100px;
+    position: absolute;
+    margin-left:20%;
+    top:10px;
+   
+}
+
+
+#navegacion
+{
+    background-color:rgba(53, 52, 52, 0.7);
+    border-radius: 5px;
+    height:100%;
+    width:30%;
+    display:block;
+    position:initial;
+   
+  
+}
+
+#navegacion ul
+{
+    flex-direction: column;
+}
+
+
+
+  }
+  
+  
+  
+
+
+
+
+
